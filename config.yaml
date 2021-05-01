@@ -1,0 +1,72 @@
+baseURL: https://example.com
+languageCode: en-us
+title: Some Title
+theme: minimal-bootstrap-hugo-theme
+taxonomies:
+  tag: tags
+permalinks:
+  post: /:filename/
+params:
+  contentBackgroundColor: '#fff'
+  contentLinkColor: '#007bff'
+  contentLinkHoverColor: '#0056b3'
+  contentTextColor: '#212529'
+  cookieConsent: yes
+  customBlockquoteStyle: yes
+  customCodeStyle: yes
+  customDateFormat: Jan 2, 2006
+  description: Some description
+  faviconMsApplicationTileColor: '#da532c'
+  faviconSafariPinnedTabColor: '#5bbad5'
+  faviconThemeColor: '#ffffff'
+  googleAnalytics: UA-123456789-1
+  includeBootstrapJs: no
+  navbarBackgroundColor: '#212529'
+  navbarLinkColor: rgba(255, 255, 255, 0.75)
+  navbarLinkHoverColor: rgba(255, 255, 255, 1)
+  showPostSummary: no
+  wrapperMaxWidth: 800px
+menu:
+  nav:
+    - name: Posts
+      url: /
+      weight: 1
+    - name: Tags
+      url: /tags/
+      weight: 2
+    - name: About
+      url: /about/
+      weight: 3
+    - name: RSS
+      url: /index.xml
+      weight: 4
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    extensions:
+      definitionList: yes
+      footnote: yes
+      linkify: yes
+      strikethrough: yes
+      table: yes
+      taskList: yes
+      typographer: yes
+    parser:
+      attribute: yes
+      autoHeadingID: yes
+    renderer:
+      hardWraps: no
+      unsafe: yes
+      xHTML: no
+  highlight:
+    codeFences: yes
+    hl_Lines: ''
+    lineNoStart: 1
+    lineNos: no
+    lineNumbersInTable: yes
+    noClasses: yes
+    style: monokai
+    tabWidth: 4
+  tableOfContents:
+    endLevel: 6
+    startLevel: 2
